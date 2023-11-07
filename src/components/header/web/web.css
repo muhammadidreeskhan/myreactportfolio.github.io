@@ -1,0 +1,34 @@
+.web {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: rgb(242, 242, 242); /* Change the background color as needed */
+    padding: 10px; /* Adding padding to enhance button appearance */
+}
+
+.web-option {
+    font-size: 20px;
+    margin-right: 16px;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex; /* Set buttons to display as flex */
+    align-items: center; /* Align button content to the center */
+}
+
+.web-option a {
+    text-decoration: none;
+    color: blue;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.web-option a:hover {
+    color: red;
+    border-color: blue;
+    transform: translateY(-3px);
+}

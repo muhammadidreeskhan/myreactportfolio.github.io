@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  background-color: rgb(250, 226, 181);
+  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s; /* Transition properties for smooth effect */
+  border-radius: 8px; /* Rounded corners for the container */
+  padding: 20px; /* Adjust padding as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+@media only screen and (max-width: 1024px) {
+  .home {
+      width: 90%;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .home {
+      width: 100%;
+  }
+}
+
+.dark-mode-button {
+  background-color: #333; /* Background color for the button */
+  color: #fff; /* Text color for the button */
+  padding: 10px 15px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Transition properties for button hover effect */
+  margin-bottom: 20px; /* Add some space between button and content */
+}
+
+.dark-mode-button:hover {
+  background-color: #555; /* Darker color on hover for 3D touch effect */
+  transform: translateY(-3px); /* Slight lift on hover for depth effect */
+}
+
+/* Your existing styles for .home */
+
+.dark-mode {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+  /* Other styles for dark mode */
+}
+
+.button-container {
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+  z-index: 999; /* Ensure it's above other content */
+}
+
+/* Other existing styles for .home, .dark-mode-button, etc. */
+
+
+.button-container {
+  z-index: 999;
+  right: 20px;
+  transition: top 0.3s ease; /* Smooth transition */
+}
+
+/* Other existing styles for .home, .dark-mode-button, etc. */
+

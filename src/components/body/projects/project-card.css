@@ -1,0 +1,139 @@
+.project-card{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0px;
+    padding: 8px 0px;
+}
+.project-photo{
+    width: 40%;
+}
+
+.project-info{
+    margin-right: 24px;
+}
+
+.project-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project-tags{
+    display: flex;
+    max-width: 60%;
+    flex-wrap: wrap;
+}
+
+.tag {
+    padding:  4px 8px;
+    background-color: blue;
+    border-radius: 4px;
+    margin-right: 6px;
+    margin-bottom: 4px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.project-links{
+    margin-top: 6px;
+    display: flex;
+}
+
+.link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: max-content;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 6px;
+}
+
+.link-button i {
+    display: flex;
+    align-items: center;
+    mask-repeat: 4px;
+}
+
+@media only screen and (max-width: 720px) {
+    .project-photo {
+        width: 70%;
+    }
+    .project-card {
+        flex-direction: column-reverse;
+    }
+    .project-info {
+        margin-left: 0px;
+        margin-top: 12px;
+    }
+    .project-tags {
+        max-width: 100%;
+    }
+}
+
+.project-card {
+    position: relative;
+    perspective: 1000px; /* Define perspective for 3D effect */
+    background-color: orange; /* Set the background color to orange */
+    border-radius: 8px; /* Rounded corners for the card */
+    padding: 20px; /* Adjust padding as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    transition: transform 0.5s, box-shadow 0.3s; /* Add transitions for transform and shadow */
+  }
+  
+  .project-info {
+    transform-style: preserve-3d; /* Ensure child elements preserve 3D transformations */
+  }
+  
+  .project-card:hover {
+    transform: rotateY(5deg); /* Apply a slight rotation on hover for 3D effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover */
+  }
+  
+
+  .project-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #00bcd4, #ff00a2); /* Adjust gradient colors */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-info {
+    text-align: center;
+    color: #fff; /* Text color */
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    color: #fff; /* Link color */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-links a:hover {
+    transform: translateY(-2px); /* Hover effect for links */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+  
+  .tag {
+    margin: 5px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent background for tags */
+  }
+  

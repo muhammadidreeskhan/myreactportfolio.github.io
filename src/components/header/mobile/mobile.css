@@ -1,0 +1,24 @@
+/* Example CSS modifications for the navigation menu buttons */
+
+.mobile-option {
+    font-size: 24px;
+    margin: 12px 0px;
+    display: flex;
+    transition: all 0.3s ease; /* Adding transition for a smooth effect */
+    transform-style: preserve-3d; /* Implementing 3D transformation */
+}
+
+.mobile-option a {
+    text-decoration: none;
+    color: blue;
+    display: flex;
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+.mobile-option:hover {
+    transform: translateZ(10px); /* Implementing a 3D translation on hover */
+}
+
+.mobile-option a:hover {
+    color: red; /* Change color on hover (Example: Red color on hover) */
+}
