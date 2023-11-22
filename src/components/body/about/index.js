@@ -1,6 +1,10 @@
 import React from "react";
 import "./about.css";
 import SocialContact from "../../common/social-contact/index";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 function About() {
   return (
     <div className="about">

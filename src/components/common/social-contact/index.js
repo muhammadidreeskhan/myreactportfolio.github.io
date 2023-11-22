@@ -1,6 +1,10 @@
 import React from "react";
 import { SocialData } from "../../data/social";
 import "./social-contact.css";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 function SocialContact() {
     const data = SocialData;
   return (

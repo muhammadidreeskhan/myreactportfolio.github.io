@@ -5,6 +5,9 @@ import Projects from "./projects/index";
 import Skills from "./skills/index";
 import Work from "./work/index";
 import Contact from "./contact/index";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 function Body() {
   return (

@@ -3,6 +3,10 @@ import "./work.css";
 import Separator from "../../common/separator";
 import {WorkData} from "../../data/work";
 import WorkCard from "./work-card";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 function Work() {
   const data = WorkData;
   return (

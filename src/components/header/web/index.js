@@ -1,5 +1,8 @@
 import React from "react";
 import './web.css';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 function Web() {
   return <div className="web">

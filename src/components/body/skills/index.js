@@ -3,6 +3,10 @@ import Separator from "../../common/separator/index";
 import "./skills.css";
 import {SkillsData} from "../../data/skills";
 import SkillCard from "./skill-card";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 function Skills() {
   const data = SkillsData;
   return (

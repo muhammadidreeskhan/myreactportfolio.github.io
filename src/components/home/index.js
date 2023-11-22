@@ -3,6 +3,9 @@ import "./home.css";
 import Header from "../header/index";
 import Body from "../body/index";
 import Footer from "../footer/index";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 function Home() {
   const [darkMode, setDarkMode] = useState(false);

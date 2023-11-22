@@ -1,5 +1,9 @@
 import React from "react";
 import './mobile.css'
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 function Mobile({ isOpen, setIsOpen}) {
   return (
   <div className="mobile">

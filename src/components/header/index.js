@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./header.css";
 import Mobile from "./mobile";
 import Web from "./web/index";
+import { createRequire } from 'module';
 
+const require = createRequire(import.meta.url);
 
 function Header() {
   const [isOpen, setIsOpen]=useState(false);
